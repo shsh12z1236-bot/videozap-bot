@@ -3,11 +3,8 @@ import telebot
 from telebot import types
 from yt_dlp import YoutubeDL
 
-# ⚠️ ضع توكن البوت الخاص بك هنا (تحصل عليه من BotFather)
-BOT_TOKEN = "ضع_توكن_البوت_هنا"
-
-# ⚠️ ضع رابط إعلانك أو قناتك هنا
-AD_LINK = "https://t.me"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+AD_LINK = os.environ.get("AD_LINK")
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
