@@ -70,6 +70,6 @@ def process_download(call):
             os.remove(video_filename)
 
 # تشغيل البوت
-if name == "main":
+if __name__ == "__main__":
     print("البوت يعمل الآن بنجاح...")
     bot.infinity_polling()
